@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>GUESTLIST -- DFW Event Vendor Marketplace</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"/>
+<link rel="stylesheet" href="shared.css"/>
+</head>
+<body data-role="customer">
+<div id="app">
+
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-logo">
+    <div class="sidebar-mark"><i class="ti ti-list-check" style="color:var(--navy);font-size:18px"></i></div>
+    <div>
+      <div class="sidebar-name">GUESTLIST</div>
+      <div class="sidebar-tagline">DFW event marketplace</div>
+    </div>
+  </div>
+  <nav class="sidebar-nav" id="sidebar-nav"></nav>
+  <div class="sidebar-footer">
+    <div class="role-pill" style="cursor:default;">
+      <i class="ti ti-user" style="font-size:16px;color:rgba(255,255,255,.5)"></i>
+      <span class="role-pill-text" id="role-text">Customer</span>
+      <span class="role-badge customer" id="role-badge">Customer</span>
+    </div>
+  </div>
+</aside>
+
+<div class="main">
+  <header class="topbar" id="topbar">
+    <div class="topbar-title" id="topbar-title">My events</div>
+    <div class="topbar-actions" id="topbar-actions"></div>
+  </header>
+
+  <div class="content" id="content">
+
+    <!-- LANDING -->
+    <div class="page active" id="page-landing">
+      <section class="hero">
+        <canvas id="confetti-canvas"></canvas>
+        <nav class="hero-nav">
+          <div style="display:flex;align-items:center;gap:9px;">
+            <div class="sidebar-mark" style="width:34px;height:34px;border-radius:9px;"><i class="ti ti-list-check" style="color:var(--navy);font-size:16px"></i></div>
+            <span style="font-size:16px;font-weight:600;letter-spacing:.09em;color:#fff;">GUESTLIST</span>
+          </div>
+          <div style="display:flex;gap:8px;align-items:center;">
+            <button class="btn" style="background:var(--gold);color:var(--navy);border-color:var(--gold);font-weight:600;" onclick="navigate('customer-signup')">Post an event</button>
+          </div>
+        </nav>
+        <div class="hero-body">
+          <div class="hero-eyebrow"><span class="hero-dot"></span>DFW's event vendor marketplace<span class="hero-dot"></span></div>
+          <h1 class="hero-h1">Every great event starts<br>with the <span class="hero-gold">right team.</span></h1>
+          <p class="hero-sub">Post your event. Get bids from verified DFW vendors. Pick the best. It's that simple.</p>
+          <div class="hero-cta">
+            <button class="btn btn-gold" style="font-size:15px;padding:14px 30px;border-radius:12px;" onclick="navigate('customer-signup')">Post your event -- it's free</button>
+          </div>
+          <div class="hero-trust">
+            <div class="trust-item"><i class="ti ti-users"></i> 142 verified vendors</div>
+            <div class="trust-item"><i class="ti ti-map-pin"></i> DFW only</div>
+            <div class="trust-item"><i class="ti ti-shield-check"></i> All vendors vetted</div>
+            <div class="trust-item"><i class="ti ti-star"></i> 4.8 avg rating</div>
+          </div>
+        </div>
+      </section>
+
+      <div style="background:var(--bg);">
+        <div class="landing-section">
+          <p class="section-label" style="text-align:center;color:var(--gold);">How it works</p>
+          <h2 style="font-size:28px;font-weight:600;text-align:center;margin-bottom:32px;">Three steps to a perfect event</h2>
+          <div class="how-grid">
+            <div class="how-card"><div class="how-num">01</div><div class="how-icon"><i class="ti ti-file-plus"></i></div><h3 style="font-size:15px;font-weight:600;margin-bottom:7px;">Post your event</h3><p style="font-size:13px;color:var(--text-muted);line-height:1.65;">Tell us your date, location, budget, and what vendors you need -- takes under 3 minutes.</p></div>
+            <div class="how-card"><div class="how-num">02</div><div class="how-icon"><i class="ti ti-receipt"></i></div><h3 style="font-size:15px;font-weight:600;margin-bottom:7px;">Receive bids</h3><p style="font-size:13px;color:var(--text-muted);line-height:1.65;">Verified local vendors send competitive bids. Most events get their first bid within 3 hours.</p></div>
+            <div class="how-card"><div class="how-num">03</div><div class="how-icon"><i class="ti ti-trophy"></i></div><h3 style="font-size:15px;font-weight:600;margin-bottom:7px;">Pick your team</h3><p style="font-size:13px;color:var(--text-muted);line-height:1.65;">Compare prices, reviews, and profiles. Award the bids you love. Your event crew is booked.</p></div>
+          </div>
+        </div>
+
+        <div class="landing-section" style="padding-top:0;">
+          <p class="section-label" style="text-align:center;color:var(--gold);">Browse by category</p>
+          <h2 style="font-size:28px;font-weight:600;text-align:center;margin-bottom:28px;">Every vendor you need, in one place</h2>
+          <div class="cat-grid">
+            <div class="cat-tile" onclick="navigate('customer-signup')"><i class="ti ti-chef-hat"></i><div class="cat-tile-name">Catering</div><div class="cat-tile-count">38 vendors</div></div>
+            <div class="cat-tile" onclick="navigate('customer-signup')"><i class="ti ti-flowers"></i><div class="cat-tile-name">Decor & florals</div><div class="cat-tile-count">24 vendors</div></div>
+            <div class="cat-tile" onclick="navigate('customer-signup')"><i class="ti ti-camera"></i><div class="cat-tile-name">Photography</div><div class="cat-tile-count">31 vendors</div></div>
+            <div class="cat-tile" onclick="navigate('customer-signup')"><i class="ti ti-armchair"></i><div class="cat-tile-name">Chairs & tables</div><div class="cat-tile-count">19 vendors</div></div>
+            <div class="cat-tile" onclick="navigate('customer-signup')"><i class="ti ti-speakerphone"></i><div class="cat-tile-name">Sound & AV</div><div class="cat-tile-count">16 vendors</div></div>
+            <div class="cat-tile" onclick="navigate('customer-signup')"><i class="ti ti-bulb"></i><div class="cat-tile-name">Lighting</div><div class="cat-tile-count">12 vendors</div></div>
+            <div class="cat-tile" onclick="navigate('customer-signup')"><i class="ti ti-cake"></i><div class="cat-tile-name">Cake & desserts</div><div class="cat-tile-count">14 vendors</div></div>
+            <div class="cat-tile" onclick="navigate('customer-signup')"><i class="ti ti-building"></i><div class="cat-tile-name">Tent & venue</div><div class="cat-tile-count">8 vendors</div></div>
+          </div>
+        </div>
+
+        <div class="landing-section" style="padding-top:0;">
+          <div style="background:var(--navy);border-radius:var(--rxl);padding:44px;">
+            <h2 style="font-size:24px;font-weight:600;color:#fff;text-align:center;margin-bottom:6px;">DFW families love GUESTLIST</h2>
+            <p style="font-size:14px;color:rgba(255,255,255,.45);text-align:center;margin-bottom:24px;">Real reviews from real events across the metroplex</p>
+            <div class="testimonials">
+              <div class="tcard"><div class="stars" style="font-size:12px;margin-bottom:8px;">★★★★★</div><div class="tcard-text">"Got 9 bids for our wedding within a day. Found our caterer and decor team $3k under budget. Game changer for DFW."</div><div class="tcard-author"><div class="tcard-av" style="background:var(--gold);color:var(--navy);">SA</div><div class="tcard-name">Sara A. &middot; Frisco, TX &middot; Wedding</div></div></div>
+              <div class="tcard"><div class="stars" style="font-size:12px;margin-bottom:8px;">★★★★★</div><div class="tcard-text">"Found a halal caterer for 250 guests and mandap decorator all in one post. Would've taken weeks the old way."</div><div class="tcard-author"><div class="tcard-av" style="background:#AFA9EC;color:#26215C;">NR</div><div class="tcard-name">Nadia R. &middot; Plano, TX &middot; Nikah</div></div></div>
+              <div class="tcard"><div class="stars" style="font-size:12px;margin-bottom:8px;">★★★★★</div><div class="tcard-text">"Quinceañera planning was stressing me out. GUESTLIST had vendors bidding competitively -- I felt in control."</div><div class="tcard-author"><div class="tcard-av" style="background:#F0997B;color:#4A1B0C;">MG</div><div class="tcard-name">Maria G. &middot; Garland, TX &middot; Quinceañera</div></div></div>
+              <div class="tcard"><div class="stars" style="font-size:12px;margin-bottom:8px;">★★★★★</div><div class="tcard-text">"From posting to booking took less than a week. The review system gave me real confidence in who I picked."</div><div class="tcard-author"><div class="tcard-av" style="background:#9FE1CB;color:#085041;">JL</div><div class="tcard-name">James L. &middot; Dallas, TX &middot; Corporate event</div></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="landing-section" style="padding-top:0;">
+          <div style="background:var(--gold);border-radius:var(--rxl);padding:52px;text-align:center;">
+            <h2 style="font-size:30px;font-weight:600;color:var(--navy);margin-bottom:8px;">Ready to make it happen?</h2>
+            <p style="font-size:14px;color:rgba(15,15,30,.6);margin-bottom:28px;">Post your event free. Get bids from DFW's best vendors. No stress, no cold calls.</p>
+            <button class="btn" style="background:var(--navy);color:#fff;font-size:14px;font-weight:600;padding:14px 30px;border-radius:12px;border-color:var(--navy);" onclick="navigate('customer-signup')">Post your event</button>
+          </div>
+        </div>
+      </div>
+
+      <footer class="landing-footer">
+        <div style="display:flex;align-items:center;gap:8px;">
+          <div class="sidebar-mark" style="width:26px;height:26px;border-radius:7px;"><i class="ti ti-list-check" style="color:var(--navy);font-size:13px"></i></div>
+          <span style="font-size:13px;font-weight:600;letter-spacing:.08em;">GUESTLIST</span>
+        </div>
+        <span style="font-size:12px;color:var(--text-hint);">&copy; 2025 GUESTLIST &middot; Dallas-Fort Worth</span>
+        <div class="footer-links"><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Contact</a></div>
+      </footer>
+    </div>
+
+    <!-- CUSTOMER SIGNUP -->
+    <div class="page" id="page-customer-signup">
+      <div style="max-width:480px;margin:0 auto;">
+        <div class="card"><div id="csignup-content"></div></div>
+      </div>
+    </div>
+
+    <!-- CUSTOMER DASHBOARD -->
+    <div class="page" id="page-customer-dashboard">
+      <div class="stats-row">
+        <div class="stat-card"><div class="stat-label">My events</div><div class="stat-value">4</div><div class="stat-sub">2 open, 2 complete</div></div>
+        <div class="stat-card"><div class="stat-label">Bids received</div><div class="stat-value">23</div><div class="stat-sub">from 18 vendors</div></div>
+        <div class="stat-card"><div class="stat-label">Vendors booked</div><div class="stat-value">6</div><div class="stat-sub">all rated 4.5+</div></div>
+        <div class="stat-card"><div class="stat-label">Total saved</div><div class="stat-value">$3,200</div><div class="stat-sub">vs market rate</div></div>
+      </div>
+      <div class="section-label" style="margin-bottom:14px;">Your events</div>
+      <div class="grid-2" id="customer-events-grid"></div>
+    </div>
+
+    <!-- POST EVENT -->
+    <div class="page" id="page-customer-post">
+      <div style="max-width:580px;margin:0 auto;">
+        <div class="card" id="post-event-card"></div>
+      </div>
+    </div>
+
+    <!-- BIDS FOR EVENT -->
+    <div class="page" id="page-customer-event-bids">
+      <div class="card" style="margin-bottom:16px;">
+        <div style="display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:16px;">
+          <div>
+            <div style="font-size:16px;font-weight:600;" id="bids-event-name">Event name</div>
+            <div style="font-size:13px;color:var(--text-muted);margin-top:2px;" id="bids-event-meta"></div>
+          </div>
+          <button class="btn btn-sm" onclick="navigate('customer-dashboard')"><i class="ti ti-arrow-left" style="font-size:14px;vertical-align:-2px"></i> Back</button>
+        </div>
+        <div id="bids-list-inner"></div>
+      </div>
+    </div>
+
+    <!-- CUSTOMER REVIEWS -->
+    <div class="page" id="page-customer-reviews">
+      <div style="display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap;">
+        <input class="form-input" style="max-width:240px;" placeholder="Search vendors..." oninput="filterAllReviews(this.value)" />
+        <select class="form-input" style="max-width:180px;" onchange="filterAllReviewsCat(this.value)">
+          <option value="">All categories</option>
+          <option>Catering</option><option>Decor & florals</option><option>Photography</option>
+          <option>Chairs & tables</option><option>Sound & AV</option><option>Cake & desserts</option>
+        </select>
+      </div>
+      <div id="all-reviews-container"></div>
+    </div>
+
+    <!-- CUSTOMER VIBES (Pinterest) -->
+    <div class="page" id="page-customer-vibes">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;">
+        <div>
+          <div style="font-size:15px;font-weight:600;color:var(--text);">Find your vibe</div>
+          <div style="font-size:12px;color:var(--text-muted);margin-top:2px;">Browse looks, tap to get matched vendors</div>
+        </div>
+        <span class="pill" style="background:var(--navy);color:var(--gold);">GUESTLIST Pro</span>
+      </div>
+      <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:16px;">
+        <span style="font-size:11px;padding:4px 12px;border-radius:20px;cursor:pointer;border:0.5px solid var(--navy);background:var(--navy);color:#fff;" onclick="filterVibes(this,'All')">All</span>
+        <span style="font-size:11px;padding:4px 12px;border-radius:20px;cursor:pointer;border:0.5px solid var(--border-md);background:transparent;color:var(--text-muted);" onclick="filterVibes(this,'Weddings')">Weddings</span>
+        <span style="font-size:11px;padding:4px 12px;border-radius:20px;cursor:pointer;border:0.5px solid var(--border-md);background:transparent;color:var(--text-muted);" onclick="filterVibes(this,'Nikah')">Nikah</span>
+        <span style="font-size:11px;padding:4px 12px;border-radius:20px;cursor:pointer;border:0.5px solid var(--border-md);background:transparent;color:var(--text-muted);" onclick="filterVibes(this,'Quinceañera')">Quinceañera</span>
+        <span style="font-size:11px;padding:4px 12px;border-radius:20px;cursor:pointer;border:0.5px solid var(--border-md);background:transparent;color:var(--text-muted);" onclick="filterVibes(this,'Eid')">Eid</span>
+        <span style="font-size:11px;padding:4px 12px;border-radius:20px;cursor:pointer;border:0.5px solid var(--border-md);background:transparent;color:var(--text-muted);" onclick="filterVibes(this,'Birthday')">Birthday</span>
+        <span style="font-size:11px;padding:4px 12px;border-radius:20px;cursor:pointer;border:0.5px solid var(--border-md);background:transparent;color:var(--text-muted);" onclick="filterVibes(this,'Corporate')">Corporate</span>
+      </div>
+      <div class="mosaic" id="vibes-mosaic"></div>
+      <div style="margin-top:16px;padding:14px;background:#FAEEDA;border-radius:var(--r);display:flex;align-items:center;gap:12px;">
+        <i class="ti ti-sparkles" style="font-size:22px;color:#854F0B;flex-shrink:0;"></i>
+        <div><div style="font-size:13px;font-weight:600;color:#633806;">Unlock all 200+ looks</div><div style="font-size:12px;color:#854F0B;margin-top:2px;">Get AI-matched vendors for your aesthetic &middot; $9/mo</div></div>
+        <button class="btn btn-gold" style="margin-left:auto;white-space:nowrap;" onclick="toast('Opening Pro upgrade...')">Upgrade</button>
+      </div>
+    </div>
+
+    <!-- CUSTOMER MESSAGES -->
+    <div class="page" id="page-customer-messages">
+      <div class="msg-layout" style="height:500px;">
+        <div class="msg-list" id="customer-msg-list"></div>
+        <div class="msg-thread" id="customer-msg-thread"></div>
+      </div>
+    </div>
+
+    <!-- CUSTOMER PAYMENTS -->
+    <div class="page" id="page-customer-payments">
+      <div class="stats-row">
+        <div class="stat-card"><div class="stat-label">Total spent</div><div class="stat-value">$8,420</div><div class="stat-sub">across 3 events</div></div>
+        <div class="stat-card"><div class="stat-label">Deposits held</div><div class="stat-value">$1,200</div><div class="stat-sub">2 upcoming events</div></div>
+        <div class="stat-card"><div class="stat-label">Discount saved</div><div class="stat-value">$842</div><div class="stat-sub">WELCOME10 applied</div></div>
+        <div class="stat-card"><div class="stat-label">Vendors paid</div><div class="stat-value">6</div><div class="stat-sub">all on time</div></div>
+      </div>
+      <div class="section-label" style="margin-bottom:12px;">Payment history</div>
+      <div class="payment-card">
+        <table class="admin-table">
+          <thead><tr><th>Event</th><th>Vendor</th><th>Category</th><th>Amount</th><th>Date</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td>Ahmed & Sara's Wedding</td><td>Bloom & Thread</td><td>Decor</td><td style="font-weight:600;">$2,600</td><td>Aug 12</td><td><span class="pill pill-green">Paid</span></td></tr>
+            <tr><td>Ahmed & Sara's Wedding</td><td>Royal Feasts</td><td>Catering</td><td style="font-weight:600;">$4,200</td><td>Aug 12</td><td><span class="pill pill-green">Paid</span></td></tr>
+            <tr><td>Fatima's Graduation</td><td>Spice Garden</td><td>Catering</td><td style="font-weight:600;">$980</td><td>Jul 5</td><td><span class="pill pill-green">Paid</span></td></tr>
+            <tr><td>Corporate Gala Q3</td><td>Prestige Events</td><td>Catering</td><td style="font-weight:600;">$8,500</td><td>Sep 20</td><td><span class="pill pill-gold">Pending</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="discount-card" style="margin-top:16px;">
+        <div style="font-size:12px;color:#854F0B;margin-bottom:6px;text-transform:uppercase;letter-spacing:.08em;">First booking gift</div>
+        <div class="code-box">WELCOME10</div>
+        <div style="font-size:12px;color:#854F0B;">10% off &middot; one-time use &middot; any vendor &middot; expires in 6 days</div>
+      </div>
+    </div>
+
+    <!-- CUSTOMER SETTINGS -->
+    <div class="page" id="page-customer-settings">
+      <div style="max-width:520px;">
+        <div class="card" style="margin-bottom:14px;">
+          <div class="section-label" style="margin-bottom:14px;">Your profile</div>
+          <div class="form-group"><label class="form-label">Full name</label><input class="form-input" value="Fatima Al-Rashid"/></div>
+          <div class="form-group"><label class="form-label">Email</label><input class="form-input" value="fatima@email.com"/></div>
+          <div class="form-group"><label class="form-label">Phone</label><input class="form-input" value="(214) 555-0192"/></div>
+          <button class="btn btn-primary" onclick="toast('Profile updated ✓')">Save changes</button>
+        </div>
+        <div class="card">
+          <div class="section-label" style="margin-bottom:14px;">Notifications</div>
+          <div style="display:flex;align-items:center;justify-content:space-between;padding:10px 0;border-bottom:0.5px solid var(--border);font-size:13px;"><span>Email when new bid arrives</span><span class="pill pill-green" style="cursor:pointer;" onclick="this.textContent=this.textContent==='on'?'off':'on';this.className='pill '+(this.textContent==='on'?'pill-green':'pill-gray');">on</span></div>
+          <div style="display:flex;align-items:center;justify-content:space-between;padding:10px 0;border-bottom:0.5px solid var(--border);font-size:13px;"><span>SMS when bid is awarded</span><span class="pill pill-green" style="cursor:pointer;" onclick="this.textContent=this.textContent==='on'?'off':'on';this.className='pill '+(this.textContent==='on'?'pill-green':'pill-gray');">on</span></div>
+          <div style="display:flex;align-items:center;justify-content:space-between;padding:10px 0;font-size:13px;"><span>Marketing emails</span><span class="pill pill-gray" style="cursor:pointer;" onclick="this.textContent=this.textContent==='on'?'off':'on';this.className='pill '+(this.textContent==='on'?'pill-green':'pill-gray');">off</span></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+
+<!-- AWARD MODAL -->
+<div class="modal-backdrop" id="award-modal">
+  <div class="modal">
+    <div class="modal-title" id="award-modal-title">Confirm award</div>
+    <div class="modal-sub" id="award-modal-body"></div>
+    <div class="modal-footer">
+      <button class="btn" onclick="closeModal('award-modal')">Cancel</button>
+      <button class="btn btn-primary" onclick="confirmAward()">Confirm award ✓</button>
+    </div>
+  </div>
+</div>
+
+<!-- REVIEW MODAL -->
+<div class="modal-backdrop" id="review-modal">
+  <div class="modal">
+    <div class="modal-title">Leave a review</div>
+    <div class="modal-sub" id="review-modal-vendor"></div>
+    <div style="display:flex;gap:6px;margin-bottom:14px;" id="star-row">
+      <button style="background:none;border:none;cursor:pointer;font-size:26px;color:#D3D1C7;padding:0 3px;line-height:1;" data-val="1" onclick="setStars(1)" aria-label="1 star">★</button>
+      <button style="background:none;border:none;cursor:pointer;font-size:26px;color:#D3D1C7;padding:0 3px;line-height:1;" data-val="2" onclick="setStars(2)" aria-label="2 stars">★</button>
+      <button style="background:none;border:none;cursor:pointer;font-size:26px;color:#D3D1C7;padding:0 3px;line-height:1;" data-val="3" onclick="setStars(3)" aria-label="3 stars">★</button>
+      <button style="background:none;border:none;cursor:pointer;font-size:26px;color:#D3D1C7;padding:0 3px;line-height:1;" data-val="4" onclick="setStars(4)" aria-label="4 stars">★</button>
+      <button style="background:none;border:none;cursor:pointer;font-size:26px;color:#D3D1C7;padding:0 3px;line-height:1;" data-val="5" onclick="setStars(5)" aria-label="5 stars">★</button>
+    </div>
+    <div class="form-group"><label class="form-label">Your review</label><textarea class="form-input" rows="3" id="review-text" placeholder="How was the service?"></textarea></div>
+    <div class="form-group"><label class="form-label">Event type (optional)</label><input class="form-input" id="review-event-type" placeholder="e.g. Wedding, Birthday"/></div>
+    <div class="modal-footer">
+      <button class="btn" onclick="closeModal('review-modal')">Cancel</button>
+      <button class="btn btn-primary" onclick="submitReview()">Submit review ↗</button>
+    </div>
+  </div>
+</div>
+
+<!-- BID MODAL (kept for parity, unused on customer side but referenced by shared.js) -->
+<div class="modal-backdrop" id="bid-modal">
+  <div class="modal">
+    <div class="modal-title">Place your bid</div>
+    <div class="modal-sub" id="bid-modal-sub">Event details</div>
+    <div class="form-group"><label class="form-label">Your price quote</label><input class="form-input" id="bid-price" placeholder="e.g. $1,800"/></div>
+    <div class="form-group"><label class="form-label">What's included</label><input class="form-input" id="bid-includes" placeholder="e.g. 200 chairs, delivery + setup, same-day pickup"/></div>
+    <div class="form-group"><label class="form-label">Note to customer</label><textarea class="form-input" rows="3" id="bid-note" placeholder="Introduce yourself and mention your experience..."></textarea></div>
+    <div class="modal-footer">
+      <button class="btn" onclick="closeModal('bid-modal')">Cancel</button>
+      <button class="btn btn-primary" onclick="submitBid()">Submit bid ↗</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast-wrap" id="toast-wrap"></div>
+
+<script type="module" src="supabase-client.js"></script>
+<script src="shared.js"></script>
+<script src="customer-app.js"></script>
+<script>
+navigate('landing');
+initConfetti();
+</script>
+</body>
+</html>

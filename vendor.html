@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>GUESTLIST for Vendors -- DFW Event Marketplace</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"/>
+<link rel="stylesheet" href="shared.css"/>
+</head>
+<body data-role="vendor">
+<div id="app">
+
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-logo">
+    <div class="sidebar-mark"><i class="ti ti-list-check" style="color:var(--navy);font-size:18px"></i></div>
+    <div>
+      <div class="sidebar-name">GUESTLIST</div>
+      <div class="sidebar-tagline">Vendor portal</div>
+    </div>
+  </div>
+  <nav class="sidebar-nav" id="sidebar-nav"></nav>
+  <div class="sidebar-footer">
+    <div class="role-pill" style="cursor:default;">
+      <i class="ti ti-armchair" style="font-size:16px;color:rgba(255,255,255,.5)"></i>
+      <span class="role-pill-text" id="role-text">Vendor</span>
+      <span class="role-badge vendor" id="role-badge">Vendor</span>
+    </div>
+  </div>
+</aside>
+
+<div class="main">
+  <header class="topbar" id="topbar">
+    <div class="topbar-title" id="topbar-title">Dashboard</div>
+    <div class="topbar-actions" id="topbar-actions"></div>
+  </header>
+
+  <div class="content" id="content">
+
+    <!-- LANDING -->
+    <div class="page active" id="page-landing">
+      <section class="hero">
+        <canvas id="confetti-canvas"></canvas>
+        <nav class="hero-nav">
+          <div style="display:flex;align-items:center;gap:9px;">
+            <div class="sidebar-mark" style="width:34px;height:34px;border-radius:9px;"><i class="ti ti-list-check" style="color:var(--navy);font-size:16px"></i></div>
+            <span style="font-size:16px;font-weight:600;letter-spacing:.09em;color:#fff;">GUESTLIST</span>
+          </div>
+          <div style="display:flex;gap:8px;align-items:center;">
+            <button class="btn" style="background:var(--gold);color:var(--navy);border-color:var(--gold);font-weight:600;" onclick="navigate('vendor-signup')">Join as a vendor</button>
+          </div>
+        </nav>
+        <div class="hero-body">
+          <div class="hero-eyebrow"><span class="hero-dot"></span>DFW's event vendor marketplace<span class="hero-dot"></span></div>
+          <h1 class="hero-h1">Get matched with<br>real <span class="hero-gold">DFW events.</span></h1>
+          <p class="hero-sub">List your business free. Bid on real event opportunities in your category. Win jobs without chasing leads.</p>
+          <div class="hero-cta">
+            <button class="btn btn-gold" style="font-size:15px;padding:14px 30px;border-radius:12px;" onclick="navigate('vendor-signup')">Join as a vendor -- it's free</button>
+          </div>
+          <div class="hero-trust">
+            <div class="trust-item"><i class="ti ti-users"></i> 142 verified vendors</div>
+            <div class="trust-item"><i class="ti ti-percentage"></i> 6% success fee only</div>
+            <div class="trust-item"><i class="ti ti-map-pin"></i> DFW only</div>
+            <div class="trust-item"><i class="ti ti-star"></i> 4.8 avg rating</div>
+          </div>
+        </div>
+      </section>
+
+      <div style="background:var(--bg);">
+        <div class="landing-section">
+          <p class="section-label" style="text-align:center;color:var(--gold);">How it works for vendors</p>
+          <h2 style="font-size:28px;font-weight:600;text-align:center;margin-bottom:32px;">Three steps to your next job</h2>
+          <div class="how-grid">
+            <div class="how-card"><div class="how-num">01</div><div class="how-icon"><i class="ti ti-user-plus"></i></div><h3 style="font-size:15px;font-weight:600;margin-bottom:7px;">Create your profile</h3><p style="font-size:13px;color:var(--text-muted);line-height:1.65;">Sign up free, add your category and service area, upload your license and insurance for verification.</p></div>
+            <div class="how-card"><div class="how-num">02</div><div class="how-icon"><i class="ti ti-bell"></i></div><h3 style="font-size:15px;font-weight:600;margin-bottom:7px;">See matching events</h3><p style="font-size:13px;color:var(--text-muted);line-height:1.65;">Browse open events in your category and DFW area. No cold calling, no chasing leads.</p></div>
+            <div class="how-card"><div class="how-num">03</div><div class="how-icon"><i class="ti ti-trophy"></i></div><h3 style="font-size:15px;font-weight:600;margin-bottom:7px;">Bid and win</h3><p style="font-size:13px;color:var(--text-muted);line-height:1.65;">Submit your price quote, get awarded, get paid. We only take a 6% success fee on completed jobs.</p></div>
+          </div>
+        </div>
+
+        <div class="landing-section" style="padding-top:0;">
+          <div style="background:var(--navy);border-radius:var(--rxl);padding:44px;">
+            <h2 style="font-size:24px;font-weight:600;color:#fff;text-align:center;margin-bottom:6px;">DFW vendors are growing with GUESTLIST</h2>
+            <p style="font-size:14px;color:rgba(255,255,255,.45);text-align:center;margin-bottom:24px;">Real results from real DFW businesses</p>
+            <div class="testimonials">
+              <div class="tcard"><div class="stars" style="font-size:12px;margin-bottom:8px;">★★★★★</div><div class="tcard-text">"Booked 6 jobs in my first month. No more relying on aunties forwarding my number -- GUESTLIST just works."</div><div class="tcard-author"><div class="tcard-av" style="background:#5DCAA5;color:#04342C;">MK</div><div class="tcard-name">Mohammed K. · Star Rentals DFW</div></div></div>
+              <div class="tcard"><div class="stars" style="font-size:12px;margin-bottom:8px;">★★★★★</div><div class="tcard-text">"The success-fee model is so much better than paying for leads that go nowhere. I only pay when I actually get the job."</div><div class="tcard-author"><div class="tcard-av" style="background:#D4A843;color:#0f0f1e;">RF</div><div class="tcard-name">Royal Feasts Catering</div></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="landing-section" style="padding-top:0;">
+          <div style="background:var(--gold);border-radius:var(--rxl);padding:52px;text-align:center;">
+            <h2 style="font-size:30px;font-weight:600;color:var(--navy);margin-bottom:8px;">Ready for your next booking?</h2>
+            <p style="font-size:14px;color:rgba(15,15,30,.6);margin-bottom:28px;">Join free. Bid only on jobs that fit. Pay only when you win.</p>
+            <button class="btn" style="background:var(--navy);color:#fff;font-size:14px;font-weight:600;padding:14px 30px;border-radius:12px;border-color:var(--navy);" onclick="navigate('vendor-signup')">Join as a vendor</button>
+          </div>
+        </div>
+      </div>
+
+      <footer class="landing-footer">
+        <div style="display:flex;align-items:center;gap:8px;">
+          <div class="sidebar-mark" style="width:26px;height:26px;border-radius:7px;"><i class="ti ti-list-check" style="color:var(--navy);font-size:13px"></i></div>
+          <span style="font-size:13px;font-weight:600;letter-spacing:.08em;">GUESTLIST</span>
+        </div>
+        <span style="font-size:12px;color:var(--text-hint);">&copy; 2025 GUESTLIST &middot; Dallas-Fort Worth</span>
+        <div class="footer-links"><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Contact</a></div>
+      </footer>
+    </div>
+
+    <!-- VENDOR SIGNUP -->
+    <div class="page" id="page-vendor-signup">
+      <div style="max-width:560px;margin:0 auto;">
+        <div class="card"><div id="vsignup-content"></div></div>
+      </div>
+    </div>
+
+    <!-- VENDOR DASHBOARD -->
+    <div class="page" id="page-vendor-dashboard">
+      <div class="stats-row">
+        <div class="stat-card"><div class="stat-label">Active bids</div><div class="stat-value">7</div><div class="stat-sub">3 awaiting response</div></div>
+        <div class="stat-card"><div class="stat-label">Jobs won</div><div class="stat-value">23</div><div class="stat-sub">this year</div></div>
+        <div class="stat-card"><div class="stat-label">Avg bid price</div><div class="stat-value">$1,840</div><div class="stat-sub">across all categories</div></div>
+        <div class="stat-card"><div class="stat-label">Your rating</div><div class="stat-value">4.8 &#9733;</div><div class="stat-sub">38 reviews</div></div>
+      </div>
+      <div class="section-label">Open opportunities matching your category</div>
+      <div class="grid-2" id="vendor-opps-grid"></div>
+    </div>
+
+    <!-- VENDOR OPPORTUNITIES -->
+    <div class="page" id="page-vendor-opportunities">
+      <div class="section-label" style="margin-bottom:14px;">All open events -- chairs & tables</div>
+      <div id="all-opps-list"></div>
+    </div>
+
+    <!-- VENDOR MY BIDS -->
+    <div class="page" id="page-vendor-bids">
+      <div id="my-bids-list"></div>
+    </div>
+
+    <!-- VENDOR PROFILE -->
+    <div class="page" id="page-vendor-profile">
+      <div class="profile-hero">
+        <div class="avatar" style="width:64px;height:64px;font-size:20px;background:var(--gold);color:var(--navy);">SR</div>
+        <div style="flex:1;">
+          <div style="font-size:18px;font-weight:600;color:#fff;">Star Rentals DFW</div>
+          <div style="font-size:13px;color:rgba(255,255,255,.6);margin-top:2px;"><i class="ti ti-armchair" style="font-size:14px;vertical-align:-2px;margin-right:4px"></i>Chairs & tables &middot; Frisco, TX</div>
+          <div class="profile-badges">
+            <span class="pill pill-gold">Verified &#10003;</span>
+            <span class="pill" style="background:rgba(255,255,255,.1);color:rgba(255,255,255,.7);">10+ years</span>
+            <span class="pill" style="background:rgba(255,255,255,.1);color:rgba(255,255,255,.7);">38 reviews</span>
+          </div>
+        </div>
+        <div style="text-align:right;">
+          <div style="font-size:28px;font-weight:600;color:#fff;">4.8</div>
+          <div class="stars">★★★★★</div>
+          <div style="font-size:12px;color:rgba(255,255,255,.5);margin-top:2px;">Overall rating</div>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+        <div>
+          <div class="card" style="margin-bottom:14px;">
+            <div class="section-label" style="margin-bottom:12px;">Rating breakdown</div>
+            <div class="rating-grid">
+              <span style="font-size:12px;color:var(--text-muted);">5&#9733;</span><div class="bar-bg"><div class="bar-fill" style="width:88%"></div></div><span style="font-size:12px;color:var(--text-muted);">33</span>
+              <span style="font-size:12px;color:var(--text-muted);">4&#9733;</span><div class="bar-bg"><div class="bar-fill" style="width:8%"></div></div><span style="font-size:12px;color:var(--text-muted);">3</span>
+              <span style="font-size:12px;color:var(--text-muted);">3&#9733;</span><div class="bar-bg"><div class="bar-fill" style="width:2%"></div></div><span style="font-size:12px;color:var(--text-muted);">1</span>
+              <span style="font-size:12px;color:var(--text-muted);">2&#9733;</span><div class="bar-bg"><div class="bar-fill" style="width:1%"></div></div><span style="font-size:12px;color:var(--text-muted);">0</span>
+              <span style="font-size:12px;color:var(--text-muted);">1&#9733;</span><div class="bar-bg"><div class="bar-fill" style="width:1%"></div></div><span style="font-size:12px;color:var(--text-muted);">1</span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="section-label" style="margin-bottom:10px;">Business info</div>
+            <div style="font-size:13px;color:var(--text-muted);line-height:1.8;">
+              <div><i class="ti ti-map-pin" style="font-size:14px;vertical-align:-2px;color:var(--gold);margin-right:6px"></i>Frisco, TX 75034</div>
+              <div><i class="ti ti-calendar" style="font-size:14px;vertical-align:-2px;color:var(--gold);margin-right:6px"></i>In business since 2013</div>
+              <div><i class="ti ti-brand-instagram" style="font-size:14px;vertical-align:-2px;color:var(--gold);margin-right:6px"></i>@starrentalsdfw</div>
+            </div>
+          </div>
+        </div>
+        <div id="vendor-profile-reviews"></div>
+      </div>
+    </div>
+
+    <!-- VENDOR MESSAGES -->
+    <div class="page" id="page-vendor-messages">
+      <div class="msg-layout" style="height:500px;">
+        <div class="msg-list" id="vendor-msg-list"></div>
+        <div class="msg-thread" id="vendor-msg-thread"></div>
+      </div>
+    </div>
+
+    <!-- VENDOR EARNINGS -->
+    <div class="page" id="page-vendor-earnings">
+      <div class="stats-row">
+        <div class="stat-card"><div class="stat-label">Total earned</div><div class="stat-value">$42,180</div><div class="stat-sub">since joining</div></div>
+        <div class="stat-card"><div class="stat-label">This month</div><div class="stat-value">$5,640</div><div class="stat-sub">4 jobs completed</div></div>
+        <div class="stat-card"><div class="stat-label">Pending payout</div><div class="stat-value">$2,200</div><div class="stat-sub">releases in 3 days</div></div>
+        <div class="stat-card"><div class="stat-label">Success fee</div><div class="stat-value">6%</div><div class="stat-sub">deducted per job</div></div>
+      </div>
+      <div class="section-label" style="margin-bottom:12px;">Payment history</div>
+      <div class="payment-card">
+        <table class="admin-table">
+          <thead><tr><th>Event</th><th>Customer</th><th>Job date</th><th>Gross</th><th>Fee</th><th>Net payout</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td>Ahmed & Sara Wedding</td><td>Sara A.</td><td>Aug 12</td><td>$2,200</td><td style="color:var(--text-muted);">$132</td><td style="font-weight:600;">$2,068</td><td><span class="pill pill-green">Paid</span></td></tr>
+            <tr><td>Corporate Gala Q3</td><td>James O.</td><td>Sep 20</td><td>$3,400</td><td style="color:var(--text-muted);">$204</td><td style="font-weight:600;">$3,196</td><td><span class="pill pill-green">Paid</span></td></tr>
+            <tr><td>Eid Family Reunion</td><td>Leila H.</td><td>Jun 30</td><td>$920</td><td style="color:var(--text-muted);">$55</td><td style="font-weight:600;">$865</td><td><span class="pill pill-gold">Pending</span></td></tr>
+            <tr><td>Maria Quinceañera</td><td>Maria G.</td><td>Aug 3</td><td>$1,100</td><td style="color:var(--text-muted);">$66</td><td style="font-weight:600;">$1,034</td><td><span class="pill pill-gold">Pending</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- VENDOR SETTINGS -->
+    <div class="page" id="page-vendor-settings">
+      <div style="max-width:560px;">
+        <div class="card" style="margin-bottom:14px;">
+          <div class="section-label" style="margin-bottom:14px;">Account details</div>
+          <div class="form-group"><label class="form-label">Business name</label><input class="form-input" value="Star Rentals DFW"/></div>
+          <div class="two-col">
+            <div class="form-group"><label class="form-label">City</label><input class="form-input" value="Frisco"/></div>
+            <div class="form-group"><label class="form-label">ZIP</label><input class="form-input" value="75034"/></div>
+          </div>
+          <div class="form-group"><label class="form-label">Bio</label><textarea class="form-input" rows="3">DFW's go-to chair and table rental. 10+ years, 300+ events.</textarea></div>
+          <div class="form-group"><label class="form-label">Instagram</label><input class="form-input" value="instagram.com/starrentalsdfw"/></div>
+          <button class="btn btn-primary" onclick="toast('Settings saved ✓')">Save changes</button>
+        </div>
+        <div class="card">
+          <div class="section-label" style="margin-bottom:14px;">Notifications</div>
+          <div style="display:flex;align-items:center;justify-content:space-between;padding:10px 0;border-bottom:0.5px solid var(--border);font-size:13px;"><span>Email on new opportunity</span><span class="pill pill-green" style="cursor:pointer;" onclick="this.textContent=this.textContent==='on'?'off':'on';this.className='pill '+(this.textContent==='on'?'pill-green':'pill-gray');">on</span></div>
+          <div style="display:flex;align-items:center;justify-content:space-between;padding:10px 0;border-bottom:0.5px solid var(--border);font-size:13px;"><span>SMS on bid award</span><span class="pill pill-green" style="cursor:pointer;" onclick="this.textContent=this.textContent==='on'?'off':'on';this.className='pill '+(this.textContent==='on'?'pill-green':'pill-gray');">on</span></div>
+          <div style="display:flex;align-items:center;justify-content:space-between;padding:10px 0;font-size:13px;"><span>Weekly earnings summary</span><span class="pill pill-gray" style="cursor:pointer;" onclick="this.textContent=this.textContent==='on'?'off':'on';this.className='pill '+(this.textContent==='on'?'pill-green':'pill-gray');">off</span></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+
+<!-- BID MODAL -->
+<div class="modal-backdrop" id="bid-modal">
+  <div class="modal">
+    <div class="modal-title">Place your bid</div>
+    <div class="modal-sub" id="bid-modal-sub">Event details</div>
+    <div class="form-group"><label class="form-label">Your price quote</label><input class="form-input" id="bid-price" placeholder="e.g. $1,800"/></div>
+    <div class="form-group"><label class="form-label">What's included</label><input class="form-input" id="bid-includes" placeholder="e.g. 200 chairs, delivery + setup, same-day pickup"/></div>
+    <div class="form-group"><label class="form-label">Note to customer</label><textarea class="form-input" rows="3" id="bid-note" placeholder="Introduce yourself and mention your experience..."></textarea></div>
+    <div class="modal-footer">
+      <button class="btn" onclick="closeModal('bid-modal')">Cancel</button>
+      <button class="btn btn-primary" onclick="submitBid()">Submit bid ↗</button>
+    </div>
+  </div>
+</div>
+
+<!-- AWARD MODAL (kept for parity, unused on vendor side but referenced by shared.js) -->
+<div class="modal-backdrop" id="award-modal">
+  <div class="modal">
+    <div class="modal-title" id="award-modal-title">Confirm award</div>
+    <div class="modal-sub" id="award-modal-body"></div>
+    <div class="modal-footer">
+      <button class="btn" onclick="closeModal('award-modal')">Cancel</button>
+      <button class="btn btn-primary" onclick="confirmAward()">Confirm award ✓</button>
+    </div>
+  </div>
+</div>
+
+<!-- REVIEW MODAL (kept for parity) -->
+<div class="modal-backdrop" id="review-modal">
+  <div class="modal">
+    <div class="modal-title">Leave a review</div>
+    <div class="modal-sub" id="review-modal-vendor"></div>
+    <div style="display:flex;gap:6px;margin-bottom:14px;" id="star-row">
+      <button style="background:none;border:none;cursor:pointer;font-size:26px;color:#D3D1C7;padding:0 3px;line-height:1;" data-val="1" onclick="setStars(1)" aria-label="1 star">★</button>
+      <button style="background:none;border:none;cursor:pointer;font-size:26px;color:#D3D1C7;padding:0 3px;line-height:1;" data-val="2" onclick="setStars(2)" aria-label="2 stars">★</button>
+      <button style="background:none;border:none;cursor:pointer;font-size:26px;color:#D3D1C7;padding:0 3px;line-height:1;" data-val="3" onclick="setStars(3)" aria-label="3 stars">★</button>
+      <button style="background:none;border:none;cursor:pointer;font-size:26px;color:#D3D1C7;padding:0 3px;line-height:1;" data-val="4" onclick="setStars(4)" aria-label="4 stars">★</button>
+      <button style="background:none;border:none;cursor:pointer;font-size:26px;color:#D3D1C7;padding:0 3px;line-height:1;" data-val="5" onclick="setStars(5)" aria-label="5 stars">★</button>
+    </div>
+    <div class="form-group"><label class="form-label">Your review</label><textarea class="form-input" rows="3" id="review-text" placeholder="How was the service?"></textarea></div>
+    <div class="form-group"><label class="form-label">Event type (optional)</label><input class="form-input" id="review-event-type" placeholder="e.g. Wedding, Birthday"/></div>
+    <div class="modal-footer">
+      <button class="btn" onclick="closeModal('review-modal')">Cancel</button>
+      <button class="btn btn-primary" onclick="submitReview()">Submit review ↗</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast-wrap" id="toast-wrap"></div>
+
+<script type="module" src="supabase-client.js"></script>
+<script src="shared.js"></script>
+<script src="vendor-app.js"></script>
+<script>
+navigate('landing');
+initConfetti();
+</script>
+</body>
+</html>
